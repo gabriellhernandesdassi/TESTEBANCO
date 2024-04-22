@@ -1,0 +1,21 @@
+CREATE TABLE PRODUTO2 (ID NUMBER GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+                    NOME VARCHAR2(30),
+                    TIPO VARCHAR2(30),
+                    MARCAR VARCHAR2(30));
+                    
+                    
+                    
+DECLARE
+
+V_NOME PRODUTO2.NOME%TYPE:= 'MOUSE';
+V_TIPO PRODUTO2. TIPO%TYPE:= 'PERIFERICO' ;
+V_MARCAR PRODUTO2.MACAR%TYPE 'DELL;
+
+BEGIN
+
+    INSERT INTOPRODUTO2 (
+        NOME,
+        TIPO, 
+        MARCAR) 
+        
+        VALUES (V_NOME, V_TIPO, V_MARCAR);
